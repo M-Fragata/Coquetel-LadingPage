@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { sliderLists } from '../constants/index'
 
 import { useGSAP } from "@gsap/react"
