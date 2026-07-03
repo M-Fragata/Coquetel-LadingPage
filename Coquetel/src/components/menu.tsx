@@ -6,7 +6,6 @@ import { gsap } from "gsap"
 
 export function Menu() {
     const [currentIndex, setCurrentIndex] = useState<number>(0)
-    const contentRef = useRef()
 
     useGSAP(() => {
         gsap.fromTo('#title', {
@@ -102,7 +101,7 @@ export function Menu() {
             </div>
 
             <div className="recipe">
-                <div ref={contentRef} className="info">
+                <div className="info">
                     <p>Recipe for:</p>
                     <p id="title">{currentCocktail.name}</p>
                 </div>
